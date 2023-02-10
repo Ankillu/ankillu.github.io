@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankillu Site</title>
+    <style>
+        .meu-elemento-h1 h1 {
+            font-weight: 1;
+            color: whitesmoke;
+            text-align: top;
+            white-space: pre-line;
+        }
+        body {
+            background-color: #0d1118;
+        }
+        nav {
+            right: 30%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid cyan;
+            padding: 10px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: orange;
+        }
+        .container4{
+            height: 600px;
+            width: 700px;
+        }
+        .container1 {
+            height: 600px;
+            width: 700px;
+        }
+        .container2 {
+            height: 600px;
+            width: 700px;
+        }
+        .container3 {
+            height: 600px;
+            width: 700px;
+        }
+        .Minhafoto {
+            position: static;
+            display: block;
+            right: 30%;
+            left: 40%;
+            height: 150px;
+        }
+        .paragrafo1 {
+            position: static;
+            bottom: 30%;
+            text-align: center;
+            font-size: medium;
+            color: whitesmoke;
+        }
+        .paragrafo2 {
+            text-align: top;
+            font-size: medium;
+            color: whitesmoke;
+        }
+        h1 {
+            font-weight: 1;
+            color: whitesmoke;
+        }
+        .paragrafo3 {
+            text-align: top;
+            font-size: small;
+            color: whitesmoke;
+        }
+        .paragrafo4 {
+            text-align: top;
+            font-size: small;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1" id="container1">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li class="home"><a href="#container1">Home</a></li>
+                <li><a href="#container2">About Me</a></li>
+                <li><a href="#container3">Projetos</a></li>
+                <li><a href="#container4">Habilidades</a></li>
+            </ul>
+        </nav>
+
+        <div class="meu-elemento-h1">
+            
+            <h1>Olá, meu nome é Angelo 
+            e quero ser desenvolvedor</h1>
+        </div>
+        <img class="Minhafoto" src="templates/myfoto.png">
+        
+    </div>
+          
+        
+    </div>
+    <div id="container2" class="container2">
+        <p class="paragrafo1">Estou fazendo o curso</p>
+        <p class="paragrafo2">The Modern Python Bootcamp e acabarei até fevereiro de 2023</p>
+        <p class="paragrafo3">Estou no sétimo ano, com as matérias preferidas sendo matemática e história</p>
+        <p class="paragrafo4">Atualmente, sei trabalhar com Kivy, HTML, CSS e Python</p>
+    </div>
+    <div class="container3" id="container3">
+        <nav class="nav-container">
+            
+        </nav>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Github Stats" src="https://github-readme-stats.vercel.app/api?username=Ankillu&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" width="390"/></a>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankillu&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1118" width="390"/></a>
+
+    </div>
+    <div class="container4" id="container4">
+        <nav class="nav-container">
+            
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var h1 = document.querySelector(".container1 h1");
+        var letters = h1.innerHTML.split("");
+        h1.innerHTML = "";
+        letters.forEach(function(letter, i) {
+            setTimeout(function() {
+                h1.innerHTML += letter;
+            }, 75 * i);
+        });
+    </script>
+    
+
+</body>
+
+</html>
