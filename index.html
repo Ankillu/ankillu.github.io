@@ -77,31 +77,30 @@
             bottom: 30%;
             text-align: center;
             font-size: medium;
-            color: whitesmoke;
-        }
-        .paragrafo2 {
-            text-align: top;
-            font-size: medium;
-            color: whitesmoke;
+            color: orange;
+
+
         }
         h1 {
             font-weight: 1;
             color: whitesmoke;
         }
-        .paragrafo3 {
-            text-align: top;
-            font-size: small;
-            color: whitesmoke;
-        }
-        .paragrafo4 {
-            text-align: top;
-            font-size: small;
-            color: whitesmoke;
-        
-        }
         .divdoh1{
             height: 300px;
-            width:  300px;
+            width:  600px;
+            display: flex;
+        }
+        .foto{
+            align-self: right;
+            display: block;
+            height: 150px;
+            width: 150px;
+        }
+        .habilidades{
+            color: whitesmoke;
+        }
+        .udemy{
+            display: block;
         }
     </style>
 </head>
@@ -118,36 +117,59 @@
     <div style="justify-content: center;" class="container1" id="container1">
         <div class="divdoh1">
             
-            <h1 style="text-align: start;">Olá, meu nome é Angelo 
+            <h1>Olá, meu nome é Angelo
             e quero ser desenvolvedor
-             mobile e full stack</h1>
-            <div style="align-items: right;">
-                <img class="Minhafoto" src="templates/myfoto.png" style="align-self: right;">
+            mobile e full stack|</h1>
+            <div>
+             <img  class="Minhafoto" src="templates/myfoto.png" style="align-self: right;">
             </div>
+
         </div>
         
     </div>
           
         
     </div>
-    <div id="container2" class="container2">
-        <p class="paragrafo1">Estou fazendo o curso</p>
-        <p class="paragrafo2">The Modern Python Bootcamp e acabarei até fevereiro de 2023</p>
-        <p class="paragrafo3">Estou no sétimo ano, com as matérias preferidas sendo matemática e história</p>
-        <p class="paragrafo4">Atualmente, sei trabalhar com Kivy, HTML, CSS e Python</p>
+    <div id="container2" class="container2" style="font-size: large;">
+        <p class="paragrafo1">Oi eu sou o Angelo<br>
+             sempre fui apaixonado por tecnologia<br>
+              desde pequeno sempre quis me tornar algo relacionando a tecnologia<br>
+               e agora estou estudando pra me tornar dev<br>
+        hoje em dia estou no sétimo ano, com as matérias preferidas sendo matemática e história</p>
+        <img class="foto" src="templates/foto.jpg">
     </div>
     <div class="container3" id="container3">
         <nav class="nav-container">
             
         </nav>
-        <a href="https://github.com/Ankillu/"><img alt="Ankillu Github Stats" src="https://github-readme-stats.vercel.app/api?username=Ankillu&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" width="390"/></a>
-        <a href="https://github.com/Ankillu/"><img alt="Ankillu Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankillu&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1118" width="390"/></a>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Github Stats" src="https://github-readme-stats.vercel.app/api?username=Ankillu&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1118" width="390"/></a>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankillu&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1119" width="390"/></a>
+        <div>
 
+        </div>
     </div>
     <div class="container4" id="container4">
-        <nav class="nav-container">
+        <a href="https://www.w3.org/Style/CSS/">
+            <img style="height: 150px;" src="templates/csslogo.png">
+        </a>    
+        <a href="https://www.w3.org/html/">
+            <img style="height: 150px;" src="templates/htmllogo.png">
+        </a>    
+        <a href="https://www.kivy.org">
+            <img style="height: 150px;" src="templates/kivylogo.png">
+        </a>   
+        <a href="https://www.python.org/">
+            <img style="height: 150px;" src="templates/pythonlogo.png">
+        </a>
+        
+        
+        
+        <a href="https://udemy.com/course/the-modern-python3-bootcamp/">
             
-        </nav>
+            <img class="udemy" style="width: 400px;" src="templates/curso udemy.png">
+        
+        </a>
+    
     </div>
 
 
@@ -171,6 +193,7 @@
             }, 75 * i);
         });
     </script>
+
     
 
 </body>
