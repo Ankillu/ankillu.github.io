@@ -6,22 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankillu Site</title>
     <style>
-        .meu-elemento-h1 h1 {
-            font-weight: 1;
-            color: whitesmoke;
-            text-align: top;
-            white-space: pre-line;
-        }
         body {
             background-color: #0d1118;
         }
         nav {
             right: 30%;
             position: fixed;
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 2px solid cyan;
+            border: 2px solid yellowgreen;
             padding: 10px;
         }
         nav ul {
@@ -38,28 +33,45 @@
             color: orange;
         }
         .container4{
-            height: 600px;
-            width: 700px;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         .container1 {
-            height: 600px;
-            width: 700px;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         .container2 {
-            height: 600px;
-            width: 700px;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         .container3 {
-            height: 600px;
-            width: 700px;
+            height: 604px;
+            width: 604px;
         }
         .Minhafoto {
-            position: static;
+            align-self: right;
             display: block;
-            right: 30%;
-            left: 40%;
+            margin: auto;
             height: 150px;
+            width: 150px;
+
         }
+        
         .paragrafo1 {
             position: static;
             bottom: 30%;
@@ -85,27 +97,34 @@
             text-align: top;
             font-size: small;
             color: whitesmoke;
+        
+        }
+        .divdoh1{
+            height: 300px;
+            width:  300px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container1" id="container1">
-        <nav class="nav-container">
-            <ul class="nav-list">
-                <li class="home"><a href="#container1">Home</a></li>
-                <li><a href="#container2">About Me</a></li>
-                <li><a href="#container3">Projetos</a></li>
-                <li><a href="#container4">Habilidades</a></li>
-            </ul>
-        </nav>
-
-        <div class="meu-elemento-h1">
+    <nav class="nav-container" ;>
+        <ul class="nav-list">
+            <li class="home"><a href="#container1">Home</a></li>
+            <li><a href="#container2">About Me</a></li>
+            <li><a href="#container3">Projetos</a></li>
+            <li><a href="#container4">Habilidades</a></li>
+        </ul>
+    </nav>
+    <div style="justify-content: center;" class="container1" id="container1">
+        <div class="divdoh1">
             
-            <h1>Olá, meu nome é Angelo 
-            e quero ser desenvolvedor</h1>
+            <h1 style="text-align: start;">Olá, meu nome é Angelo 
+            e quero ser desenvolvedor
+             mobile e full stack</h1>
+            <div style="align-items: right;">
+                <img class="Minhafoto" src="templates/myfoto.png" style="align-self: right;">
+            </div>
         </div>
-        <img class="Minhafoto" src="templates/myfoto.png">
         
     </div>
           
