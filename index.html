@@ -1,1 +1,221 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankillu Site</title>
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: #0d1118;
+      }
+
+      nav {
+        right: 30%;
+        position: fixed;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0.1% solid yellowgreen;
+        padding: 1%;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 5%;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: orange;
+      }
+
+      .container4 {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container1 {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container2 {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container3 {
+        height: 100%;
+        width: 100%;
+      }
+
+      .Minhafoto {
+        align-self: right;
+        display: block;
+        margin: auto;
+        height: 10%;
+        width: 10%;
+      }
+
+      .paragrafo1 {
+        position: static;
+        bottom: 30%;
+        text-align: center;
+        font-size: medium;
+        color: orange;
+      }
+
+      h1 {
+        font-weight: 1;
+        color: whitesmoke;
+      }
+
+      .divdoh1 {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .foto {
+        align-self: right;
+        display: block;
+        height: 10%;
+        width: 10%;
+      }
+
+      .habilidades {
+        color: whitesmoke;
+      }
+
+      .udemy {
+        display: block;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container" ;>
+        <ul class="nav-list">
+            <li class="home"><a href="#container1">Home</a></li>
+            <li><a href="#container2">About Me</a></li>
+            <li><a href="#container3">Projetos</a></li>
+            <li><a href="#container4">Habilidades</a></li>
+        </ul>
+    </nav>
+    <div style="justify-content: center;" class="container1" id="container1">
+        <div class="divdoh1">
+            
+            <h1>Olá, meu nome é Angelo
+            e quero ser desenvolvedor
+            mobile e full stack|</h1>
+            <div>
+             <img  class="Minhafoto" src="templates/myfoto.png" style="align-self: right;">
+            </div>
+
+        </div>
+        
+    </div>
+          
+        
+    </div>
+    <div id="container2" class="container2" style="font-size: large;">
+        <p class="paragrafo1">Oi eu sou o Angelo<br>
+             sempre fui apaixonado por tecnologia<br>
+              desde pequeno sempre quis me tornar algo relacionando a tecnologia<br>
+               e agora estou estudando pra me tornar dev<br>
+        hoje em dia estou no sétimo ano, com as matérias preferidas sendo matemática e história</p>
+        <img class="foto" src="templates/foto.jpg">
+    </div>
+    <div class="container3" id="container3">
+        <nav class="nav-container">
+            
+        </nav>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Github Stats" src="https://github-readme-stats.vercel.app/api?username=Ankillu&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1118" width="390"/></a>
+        <a href="https://github.com/Ankillu/"><img alt="Ankillu Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankillu&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1119" width="390"/></a>
+        <div>
+
+        </div>
+    </div>
+    <div class="container4" id="container4">
+        <a href="https://www.w3.org/Style/CSS/">
+            <img style="height: 20%;" src="templates/csslogo.png">
+        </a>    
+        <a href="https://www.w3.org/html/">
+            <img style="height: 20%;" src="templates/htmllogo.png">
+        </a>    
+        <a href="https://www.kivy.org">
+            <img style="height: 20%;" src="templates/kivylogo.png">
+        </a>   
+        <a href="https://www.python.org/">
+            <img style="height: 20%;" src="templates/pythonlogo.png">
+        </a>
+        
+        
+        
+        <a href="https://udemy.com/course/the-modern-python3-bootcamp/">
+            
+            <img class="udemy" style="width: 35%;" src="templates/curso udemy.png">
+        
+        </a>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var h1 = document.querySelector(".container1 h1");
+        var letters = h1.innerHTML.split("");
+        h1.innerHTML = "";
+        letters.forEach(function(letter, i) {
+            setTimeout(function() {
+                h1.innerHTML += letter;
+            }, 75 * i);
+        });
+    </script>
+
+    
+
+</body>
+
+</html>
