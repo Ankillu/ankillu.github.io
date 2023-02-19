@@ -1,127 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankillu Site</title>
     <style>
-      html {
-        height: 100%;
-        width: 100%;
-      }
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        
+        body {
+            background-color: #0d1118;
+        }
+        nav {
+            right: 30%;
+            position: fixed;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 0.1% solid yellowgreen;
+            padding: 1%;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 0.625em;
+        }
+        nav a {
+            text-decoration: none;
+            color: orange;
+        }
+        .container4{
+            width: 100vw;
+            height: 100vh;
 
-      body {
-        background-color: #0d1118;
-      }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container1 {
+            width: 100vw;
+            height: 100vh;
 
-      nav {
-        right: 30%;
-        position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 {
+            width: 100vw;
+            height: 100vh;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 0.1% solid yellowgreen;
-        padding: 1%;
-      }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container3 {
+            height: 37.75em;
+            width: 37.75em;
+        }
+        .Minhafoto {
+            align-self: right;
+            display: block;
+            margin: auto;
+            height: 9.375em;
+            width: 9.375em;
 
-      nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+        }
+        
+        .paragrafo1 {
+            position: static;
+            bottom: 30%;
+            text-align: center;
+            font-size: medium;
+            color: orange;
 
-      nav ul li {
-        margin: 0 5%;
-      }
 
-      nav a {
-        text-decoration: none;
-        color: orange;
-      }
-
-      .container4 {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container1 {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container2 {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container3 {
-        height: 100%;
-        width: 100%;
-      }
-
-      .Minhafoto {
-        align-self: right;
-        display: block;
-        margin: auto;
-        height: 10%;
-        width: 10%;
-      }
-
-      .paragrafo1 {
-        position: static;
-        bottom: 30%;
-        text-align: center;
-        font-size: medium;
-        color: orange;
-      }
-
-      h1 {
-        font-weight: 1;
-        color: whitesmoke;
-      }
-
-      .divdoh1 {
-        height: 50%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .foto {
-        align-self: right;
-        display: block;
-        height: 10%;
-        width: 10%;
-      }
-
-      .habilidades {
-        color: whitesmoke;
-      }
-
-      .udemy {
-        display: block;
-      }
+        }
+        h1 {
+            font-weight: 1;
+            color: whitesmoke;
+        }
+        .divdoh1{
+            height: 18.75em;
+            width:  37.5em;
+            display: flex;
+        }
+        .foto{
+            align-self: right;
+            display: block;
+            height: 9.375em;
+            width: 9.375em;
+        }
+        .habilidades{
+            color: whitesmoke;
+        }
+        .udemy{
+            display: block;
+        }
     </style>
 </head>
 
@@ -170,23 +155,23 @@
     </div>
     <div class="container4" id="container4">
         <a href="https://www.w3.org/Style/CSS/">
-            <img style="height: 20%;" src="templates/csslogo.png">
+            <img style="height: 9.375em;" src="templates/csslogo.png">
         </a>    
         <a href="https://www.w3.org/html/">
-            <img style="height: 20%;" src="templates/htmllogo.png">
+            <img style="height: 9.375em;" src="templates/htmllogo.png">
         </a>    
         <a href="https://www.kivy.org">
-            <img style="height: 20%;" src="templates/kivylogo.png">
+            <img style="height: 9.375em;" src="templates/kivylogo.png">
         </a>   
         <a href="https://www.python.org/">
-            <img style="height: 20%;" src="templates/pythonlogo.png">
+            <img style="height: 9.375em;" src="templates/pythonlogo.png">
         </a>
         
         
         
         <a href="https://udemy.com/course/the-modern-python3-bootcamp/">
             
-            <img class="udemy" style="width: 35%;" src="templates/curso udemy.png">
+            <img class="udemy" style="width: 25em;" src="templates/curso udemy.png">
         
         </a>
     
